@@ -53,20 +53,20 @@ npm start # runs create-react-app hot-reload dev server
 
 this list is from https://www.webcomponents.org/author/wiredjs
 
-[x] checkbox
-[x] button
-[ ] slider
-[ ] menu-bar
-[ ] menu-item
-[ ] icon-button (not doing this for now because iron-icon)
-[x] textarea
-[x] input
-[ ] listbox
-[x] toggle
-[x] radio
-[ ] radio-group
-[ ] combo
-[ ] card
-[ ] item
-[x] progress
-[x] spinner
+* [x] checkbox
+* [x] button
+* [ ] slider
+* [ ] menu-bar
+* [ ] menu-item
+* [ ] icon-button (not doing this for now because iron-icon)
+* [x] textarea
+* [x] input
+* [ ] listbox
+* [x] toggle
+* [x] radio
+* [ ] radio-group
+* [ ] combo
+* [ ] card
+* [ ] item
+* [x] progress
+* [x] spinner
