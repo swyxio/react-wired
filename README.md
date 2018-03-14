@@ -1,16 +1,42 @@
 # react-wired
 
-> react wired
+> because your compnents look a little more human if they were hand drawn!
+
+![like this](https://pbs.twimg.com/media/DYNCYT1UMAAt6Zf.jpg)
+
+`react-wired` reimplements [wired-js](https://www.webcomponents.org/author/wiredjs) in pure React. This component library is in ACTIVE DEVELOPMENT and is seeking contribution help.
 
 [![NPM](https://img.shields.io/npm/v/react-wired.svg)](https://www.npmjs.com/package/react-wired) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-## Install
+
+# Conversion TodoList
+
+this list is from https://www.webcomponents.org/author/wiredjs - we need help on finishing off the rest. does not use react-polymer because i dont really know polymer
+
+* [x] checkbox
+* [x] button
+* [ ] slider
+* [ ] menu-bar
+* [ ] menu-item
+* [ ] icon-button (not doing this for now because iron-icon)
+* [x] textarea
+* [x] input
+* [ ] listbox
+* [x] toggle
+* [x] radio
+* [ ] radio-group
+* [ ] combo
+* [ ] card
+* [ ] item
+* [x] progress
+* [x] spinner
+
+
+## Example Usage in your project
 
 ```bash
 npm install --save react-wired
 ```
-
-## Usage
 
 ```jsx
 import React, { Component } from "react";
@@ -26,7 +52,7 @@ import {
   WiredCheckBox
 } from "react-wired";
 
-export default class App extends Component {
+export default class Demo extends Component {
   state = {
     toggle: true,
     value: "",
@@ -100,6 +126,26 @@ export default class App extends Component {
 
 ```
 
+This exact code can be seen in this repo itself inside `/example` where there is a create-react-app instance that uses the local build of `react-wired` - see dev instructions
+
+## Instructions for local development of this library
+
+for publishing to npm, not for immediate use in other projects
+
+```bash
+# run example to start developing your new component against
+npm link # the link commands are important for local development
+npm install # first time only; also, disregard any warnings about missing peer dependencies
+npm start # runs rollup with watch flag
+
+# (in another tab, run the example create-react-app)
+cd example
+npm link react-wired
+npm install # first time only
+npm start # runs create-react-app hot-reload dev server
+```
+
+
 ## License
 
 MIT © [sw-yx](https://github.com/sw-yx)
@@ -109,40 +155,3 @@ scaffolded with the amazing `create-react-library`: <https://hackernoon.com/publ
 ## Other resources used
 
 <https://stackoverflow.com/questions/41970342/whats-the-difference-between-this-and-this-in-polymer>
-
-## notes for local development
-
-```bash
-# run example to start developing your new component against
-npm link # the link commands are important for local development
-# npm install # disregard any warnings about missing peer dependencies
-npm start # runs rollup with watch flag
-
-# (in another tab, run the example create-react-app)
-cd example
-npm link react-wired
-# npm install
-npm start # runs create-react-app hot-reload dev server
-```
-
-# Conversion TodoList
-
-this list is from https://www.webcomponents.org/author/wiredjs
-
-* [x] checkbox
-* [x] button
-* [ ] slider
-* [ ] menu-bar
-* [ ] menu-item
-* [ ] icon-button (not doing this for now because iron-icon)
-* [x] textarea
-* [x] input
-* [ ] listbox
-* [x] toggle
-* [x] radio
-* [ ] radio-group
-* [ ] combo
-* [ ] card
-* [ ] item
-* [x] progress
-* [x] spinner
