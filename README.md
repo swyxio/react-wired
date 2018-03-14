@@ -38,6 +38,8 @@ this list is from https://www.webcomponents.org/author/wiredjs - we need help on
 npm install --save react-wired
 ```
 
+this code below generates the screenshot you saw above
+
 ```jsx
 import React, { Component } from "react";
 
