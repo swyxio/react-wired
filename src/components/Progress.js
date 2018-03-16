@@ -75,8 +75,8 @@ export class Progress extends React.Component {
     this.relayout();
   }
   render() {
-    let { percentage, max, min, progressLabel, value } = this.props;
-
+    const { percentage, max, min, value } = this.props;
+    let progressLabel;
     // implement the percentage logic somehow
     if (percentage) {
       if (max == min) {

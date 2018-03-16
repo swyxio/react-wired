@@ -9,14 +9,12 @@ const StyledDiv = styled.div`
   cursor: pointer;
   padding: 8px 10px;
   position: relative;
-  text-align: center;
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
   user-select: none;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
   display: inline-flex;
 
   &:active path {

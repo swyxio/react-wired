@@ -5,8 +5,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import styles from "./styles.css";
-
 // https://stackoverflow.com/questions/41993445/exporting-a-function-on-typescript-declaration-or-statement-expected
 import Button from "./components/Button";
 export const WiredButton = Button;
@@ -24,6 +22,8 @@ import Spinner from "./components/Spinner";
 export const WiredSpinner = Spinner;
 import CheckBox from "./components/CheckBox";
 export const WiredCheckBox = CheckBox;
+import Slider from "./components/Slider";
+export const WiredSlider = Slider;
 
 export default class ExampleComponent extends Component {
   static propTypes = {
@@ -33,6 +33,6 @@ export default class ExampleComponent extends Component {
   render() {
     const { text } = this.props;
 
-    return <div className={styles.test}>Example Component: {text}</div>;
+    return <div>Example Component: {text}</div>;
   }
 }
