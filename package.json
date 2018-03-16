@@ -1,6 +1,6 @@
 {
   "name": "react-wired",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react wired",
   "author": "sw-yx",
   "license": "MIT",
@@ -14,7 +14,8 @@
     "start": "rollup -c -w",
     "prepare": "npm run build",
     "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "release": "release-it"
   },
   "dependencies": {
     "react-rangeslider": "^2.2.0",
