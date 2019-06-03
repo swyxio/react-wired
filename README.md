@@ -4,7 +4,7 @@
 
 ![like this](https://pbs.twimg.com/media/DYX7x-vWsAEhcTJ.jpg)
 
-`react-wired` reimplements [wired-js](https://www.webcomponents.org/author/wiredjs) in pure React. This component library is in ACTIVE DEVELOPMENT and is seeking contribution help.
+`react-wired` reimplements [wired-js](https://www.webcomponents.org/author/wiredjs) in pure React. This component library is not actively developed at the time being, let me know if you want to contribute..
 
 [![NPM](https://img.shields.io/npm/v/react-wired.svg)](https://www.npmjs.com/package/react-wired) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
